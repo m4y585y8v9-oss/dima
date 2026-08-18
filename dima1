@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#efe9dc">
+<title>Дмитрий Алексеевич — Архив гейности</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#eee7d8;color:#151515;font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.15;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.17'/%3E%3C/svg%3E")}
+a{color:inherit}
+.wrap{width:min(1180px,92vw);margin:auto}
+.top{background:#171717;color:#f7f0e2;border-bottom:5px solid #e84a2a}
+.topline{height:42px;display:flex;align-items:center;justify-content:space-between;font:700 11px/1 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.masthead{padding:15px 0 8px;border-bottom:1px solid #151515}
+.mast{font-size:clamp(44px,9vw,110px);font-weight:900;line-height:.78;letter-spacing:-.07em}
+.mast em{font-style:normal;color:#e84a2a}
+.sub{font:900 12px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;margin-top:15px}
+.nav{display:flex;gap:0;overflow:auto;border-bottom:2px solid #151515}
+.nav a{white-space:nowrap;padding:12px 18px;font:900 12px Arial,sans-serif;text-transform:uppercase;text-decoration:none;border-right:1px solid #151515}
+.nav a:hover{background:#e84a2a;color:#fff}
+.hero{padding:28px 0 0}
+.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;border-bottom:3px solid #151515}
+.headline{font-size:clamp(42px,6.5vw,88px);line-height:.86;letter-spacing:-.055em;margin:0 0 20px}
+.headline span{background:#f4d64f;padding:0 .08em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.kicker{font:900 14px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;border-left:8px solid #e84a2a;padding-left:12px;margin-bottom:20px}
+.intro{font-size:20px;line-height:1.35;max-width:690px}
+.photoWrap{position:relative;min-height:560px;background:#26384a;display:grid;place-items:end center;overflow:hidden;border-left:3px solid #151515}
+.photoWrap:before{content:"ДМИТРИЙ АЛЕКСЕЕВИЧ";position:absolute;top:16px;left:16px;color:#f4d64f;font:900 18px Arial,sans-serif;letter-spacing:.08em;writing-mode:vertical-rl}
+.photo{width:88%;height:92%;object-fit:cover;object-position:center top;filter:saturate(.9) contrast(1.08);mix-blend-mode:normal}
+.stamp{position:absolute;right:15px;bottom:18px;border:5px double #e84a2a;color:#e84a2a;padding:10px 12px;transform:rotate(-8deg);font:900 18px Arial,sans-serif;letter-spacing:.06em;background:#eee7d8}
+.marquee{background:#e84a2a;color:#fff;overflow:hidden;border-bottom:3px solid #151515;border-top:3px solid #151515;font:900 17px Arial,sans-serif}
+.marquee div{display:inline-block;white-space:nowrap;padding:10px 0;animation:scroll 22s linear infinite}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.columns{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;padding:35px 0}
+article{font-size:18px;line-height:1.55}
+article p:first-child:first-letter{font-size:70px;float:left;line-height:.7;padding:9px 8px 0 0;color:#e84a2a;font-weight:900}
+h2{font-size:clamp(34px,5vw,58px);line-height:.9;letter-spacing:-.05em;margin:0 0 16px}
+h3{font:900 17px Arial,sans-serif;text-transform:uppercase;letter-spacing:.05em;margin:0 0 10px}
+.side{border-left:2px solid #151515;padding-left:22px}
+.fact{padding:16px 0;border-bottom:1px solid #777}
+.fact b{font:900 35px Arial,sans-serif;display:block}
+.tag{display:inline-block;background:#151515;color:#fff;padding:5px 8px;font:900 11px Arial,sans-serif;letter-spacing:.1em;margin:4px 3px 0 0}
+.section{border-top:3px solid #151515;padding:35px 0}
+.equation{font:900 clamp(22px,4vw,44px)/1.1 "Courier New",monospace;background:#151515;color:#f4d64f;padding:22px;overflow:auto}
+.equation i{color:#e84a2a;font-style:normal}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.card{background:#d8cfbd;border:2px solid #151515;padding:18px;min-height:180px;transition:.2s;cursor:pointer}
+.card:nth-child(2){background:#f4d64f}.card:nth-child(3){background:#e84a2a;color:#fff}
+.card:hover{transform:translate(-5px,-5px);box-shadow:8px 8px 0 #151515}
+.card p{margin:8px 0 0;line-height:1.4}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+button{font:900 13px Arial,sans-serif;text-transform:uppercase;border:2px solid #151515;background:#f4d64f;padding:13px 15px;cursor:pointer;box-shadow:4px 4px 0 #151515;transition:.12s}
+button:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 #151515}
+button.red{background:#e84a2a;color:#fff}
+button.dark{background:#151515;color:#fff}
+.bubbleField{position:relative;height:310px;background:#b9dbe0;border:3px solid #151515;overflow:hidden}
+.bubble{position:absolute;border:2px solid #151515;border-radius:50%;background:#ffffff77;animation:rise linear infinite;display:grid;place-items:center;font:900 11px Arial,sans-serif;text-transform:uppercase}
+@keyframes rise{from{transform:translateY(340px) rotate(0);opacity:0}15%{opacity:1}to{transform:translateY(-120px) rotate(360deg);opacity:0}}
+.bigVerdict{background:#151515;color:#fff;padding:35px;margin-top:20px;position:relative;overflow:hidden}
+.bigVerdict h2{color:#f4d64f}
+.bigVerdict p{font-size:20px;line-height:1.5;max-width:900px}
+.bigVerdict:after{content:"ГЕЙ ГЕЙ ГЕЙ ГЕЙ ГЕЙ";position:absolute;right:-35px;bottom:-30px;color:#e84a2a;font:900 70px/0.75 Arial,sans-serif;transform:rotate(-12deg);opacity:.35}
+footer{background:#e84a2a;color:#fff;margin-top:40px;padding:25px 0;font:900 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:50}
+.spark{position:absolute;width:4px;height:18px;background:#f4d64f;transform-origin:50% 100%;animation:spark 1s ease-out forwards}
+@keyframes spark{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
+.conf{position:fixed;top:-30px;z-index:100;width:9px;height:16px;animation:fall 1.8s linear forwards}
+@keyframes fall{to{transform:translate(var(--x),110vh) rotate(900deg)}}
+#msg{position:fixed;left:50%;bottom:20px;transform:translate(-50%,30px);background:#151515;color:#fff;padding:14px 18px;border:3px solid #f4d64f;font:900 12px Arial,sans-serif;opacity:0;transition:.25s;z-index:120;max-width:90vw;text-align:center}
+#msg.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:780px){
+ .topline{padding:0 3vw}.masthead{padding:12px 0}.nav a{padding:11px 13px}
+ .heroGrid,.columns{grid-template-columns:1fr}.photoWrap{min-height:480px;border-left:0;border-top:3px solid #151515}
+ .photo{width:90%;height:95%}.columns{gap:20px}.side{border-left:0;border-top:2px solid #151515;padding:20px 0 0}
+ .cards{grid-template-columns:1fr}.intro{font-size:18px}.section{padding:28px 0}
+ .headline{font-size:clamp(46px,15vw,78px)}button{width:100%}.controls{gap:9px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="fx"></div><div id="msg"></div>
+
+<header class="top">
+  <div class="wrap topline"><span>АРХИВ № 0417 / ДМИТРИЙ АЛЕКСЕЕВИЧ</span><span>ОСОБОЕ ДОСЬЕ</span></div>
+</header>
+
+<div class="wrap masthead">
+  <div class="mast">ДМИТРИЙ <em>ГЕЙ</em></div>
+  <div class="sub">Академический журнал по вопросам Дмитрия Алексеевича и фундаментальной гейности</div>
+</div>
+
+<nav class="wrap nav">
+  <a href="#theory">Теория</a><a href="#evidence">Доказательства</a><a href="#formula">Формула</a><a href="#bubbles">Пузырьки</a><a href="#verdict">Вердикт</a>
+</nav>
+
+<main>
+<section class="hero">
+<div class="wrap heroGrid">
+  <div style="padding:30px 25px 35px 0">
+    <div class="kicker">Исследование личности / Дмитрий Алексеевич / гей</div>
+    <h1 class="headline">ПОЧЕМУ <span>ДМИТРИЙ АЛЕКСЕЕВИЧ</span> ГЕЙ</h1>
+    <p class="intro">Вопрос, который давно перестал быть вопросом. Перед нами феномен Дмитрия Алексеевича — человека, чья гейность рассматривается настоящей страницей как отдельная научная дисциплина, требующая терминологии, диаграмм, архивов и чрезмерно серьёзных выводов.</p>
+    <div class="controls">
+      <button onclick="fireworks()">ИССЛЕДОВАТЬ ГЕЙНОСТЬ</button>
+      <button class="red" onclick="confetti()">АКТИВИРОВАТЬ ГЕЙ</button>
+      <button class="dark" onclick="sayGay()">ПРОИЗНЕСТИ «ДМИТРИЙ ГЕЙ»</button>
+    </div>
+  </div>
+  <div class="photoWrap">
+    <img class="photo" src="dmitry.jpeg" alt="Дмитрий Алексеевич">
+    <div class="stamp">ГЕЙ<br>100%</div>
+  </div>
+</div>
+</section>
+
+<div class="marquee"><div>ДМИТРИЙ АЛЕКСЕЕВИЧ • ГЕЙ • ДМИТРИЙ АЛЕКСЕЕВИЧ • ГЕЙ • ГЕЙ • ГЕЙ • ДМИТРИЙ АЛЕКСЕЕВИЧ • ГЕЙ • ДМИТРИЙ АЛЕКСЕЕВИЧ • ГЕЙ • </div></div>
+
+<section id="theory">
+<div class="wrap columns">
+<article>
+  <h2>Теория Дмитрия Алексеевича</h2>
+  <p>Дмитрий Алексеевич гей не просто по бытовому смыслу этого слова. Его гейность, согласно внутренней терминологии архива, обладает структурной, семантической и метафизической составляющими. Здесь гейность Дмитрия Алексеевича понимается как состояние, при котором имя «Дмитрий Алексеевич» и слово «гей» начинают образовывать настолько устойчивую связку, что разделить их лингвистически становится затруднительно.</p>
+  <p>При попытке формально описать Дмитрия Алексеевича возникает любопытный эффект: любое повествование постепенно дрейфует к слову «гей». Исследователь начинает с фотографии, переходит к биографии, затем к терминологии, после чего внезапно обнаруживает, что написал уже третий абзац о том, почему Дмитрий Алексеевич гей.</p>
+  <p>Таким образом, гейность Дмитрия Алексеевича становится не частным наблюдением, а центральной осью данного архива. Дмитрий Алексеевич — гей. Гей — Дмитрий Алексеевич. Лингвистический круг замыкается.</p>
+</article>
+<aside class="side">
+  <h3>Параметры</h3>
+  <div class="fact"><b>100%</b>Дмитрий Алексеевич</div>
+  <div class="fact"><b>∞</b>уровень гейности</div>
+  <div class="fact"><b>24/7</b>Дмитрий гей</div>
+  <div class="fact"><b>0</b>сомнений архива</div>
+  <div style="padding-top:14px">
+    <span class="tag">ДМИТРИЙ</span><span class="tag">АЛЕКСЕЕВИЧ</span><span class="tag">ГЕЙ</span><span class="tag">ГЕЙНОСТЬ</span>
+  </div>
+</aside>
+</div>
+</section>
+
+<section id="evidence" class="section">
+<div class="wrap">
+<h2>Каталог причин, по которым Дмитрий Алексеевич гей</h2>
+<div class="cards">
+  <div class="card"><h3>01 / Фотографический аргумент</h3><p>Фотография Дмитрия Алексеевича содержит достаточную концентрацию Дмитрия Алексеевича, чтобы архив уверенно продолжал исследование гейности.</p></div>
+  <div class="card"><h3>02 / Семантический аргумент</h3><p>Словосочетание «Дмитрий Алексеевич» многократно встречается рядом со словом «гей», вследствие чего возникает устойчивый термин: «Дмитрий Алексеевич гей».</p></div>
+  <div class="card"><h3>03 / Космологический аргумент</h3><p>Если Вселенная расширяется, то и пространство для слова «гей» вокруг Дмитрия Алексеевича тоже расширяется. Следовательно: Дмитрий гей.</p></div>
+</div>
+</div>
+</section>
+
+<section id="formula" class="section">
+<div class="wrap">
+<h2>Формула гейности</h2>
+<div class="equation">
+ДМИТРИЙ АЛЕКСЕЕВИЧ + ФОТОГРАФИЯ + ВРЕМЯ + <i>НЕОБЪЯСНИМАЯ ГЕЙНОСТЬ</i><br>
+= ДМИТРИЙ АЛЕКСЕЕВИЧ <i>ГЕЙ</i><br><br>
+lim<sub>t→∞</sub> (ДМИТРИЙ × ГЕЙ) = <i>ГЕЙ</i>∞
+</div>
+<div class="controls">
+<button onclick="toast('Теорема доказана: Дмитрий Алексеевич гей.')">ДОКАЗАТЬ ТЕОРЕМУ</button>
+<button onclick="bubbleStorm()">ЗАПУСТИТЬ ПУЗЫРЬКИ</button>
+</div>
+</div>
+</section>
+
+<section id="bubbles" class="section">
+<div class="wrap">
+<h2>Пузырьковая камера Дмитрия</h2>
+<div class="bubbleField" id="bubbleField"></div>
+</div>
+</section>
+
+<section id="verdict" class="section">
+<div class="wrap">
+<div class="bigVerdict">
+<h2>ДМИТРИЙ АЛЕКСЕЕВИЧ — ГЕЙ</h2>
+<p>Архив располагает огромным количеством слов, терминов, формул и графических свидетельств. Чем больше исследование углубляется в феномен Дмитрия Алексеевича, тем чаще обнаруживается слово «гей». Поэтому итоговая формулировка максимально лаконична: Дмитрий Алексеевич — гей. Гей Дмитрий. Дмитрий гей. Гейность Дмитрия Алексеевича. Дмитрий Алексеевич, гей.</p>
+<div class="controls">
+<button class="red" onclick="fireworks();confetti();bubbleStorm()">ЗАПУСТИТЬ ФИНАЛЬНЫЙ РЕЖИМ</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">ДМИТРИЙ АЛЕКСЕЕВИЧ / ГЕЙ / АРХИВ ЗАКРЫВАЕТСЯ, НО ГЕЙНОСТЬ ПРОДОЛЖАЕТСЯ</div></footer>
+
+<script>
+const fx=document.getElementById('fx'), msg=document.getElementById('msg');
+function toast(t){msg.textContent=t;msg.classList.add('on');clearTimeout(window.tm);window.tm=setTimeout(()=>msg.classList.remove('on'),2400)}
+function fireworks(){
+ for(let b=0;b<8;b++){
+  setTimeout(()=>{
+   const cx=10+Math.random()*80, cy=15+Math.random()*45;
+   for(let i=0;i<34;i++){
+    const s=document.createElement('i');s.className='spark';s.style.left=cx+'vw';s.style.top=cy+'vh';
+    const a=Math.PI*2*i/34, d=70+Math.random()*150;
+    s.style.setProperty('--x',Math.cos(a)*d+'px');s.style.setProperty('--y',Math.sin(a)*d+'px');s.style.setProperty('--r',(Math.random()*360)+'deg');
+    fx.appendChild(s);setTimeout(()=>s.remove(),1100);
+   }
+  },b*180);
+ }
+ toast('ФЕЙЕРВЕРК ДМИТРИЯ АЛЕКСЕЕВИЧА: ГЕЙНОСТЬ ПОДТВЕРЖДЕНА');
+}
+function confetti(){
+ const chars=['Г','Е','Й','Д','М','И','Т','Р','И','Й','🌈','✦'];
+ for(let i=0;i<80;i++){
+  const c=document.createElement('div');c.className='conf';c.textContent=chars[Math.floor(Math.random()*chars.length)];
+  c.style.left=Math.random()*100+'vw';c.style.setProperty('--x',(Math.random()*360-180)+'px');c.style.animationDelay=Math.random()*.6+'s';
+  c.style.color=Math.random()>.5?'#e84a2a':'#151515';c.style.font='900 '+(12+Math.random()*20)+'px Arial';
+  document.body.appendChild(c);setTimeout(()=>c.remove(),2400);
+ }
+ toast('ДМИТРИЙ ГЕЙ — БУКВАЛЬНО С НЕБА');
+}
+function sayGay(){
+ const u=new SpeechSynthesisUtterance('Дмитрий Алексеевич гей. Гей. Гей. Гей.');
+ u.lang='ru-RU';u.rate=.8;u.pitch=1.1;speechSynthesis.cancel();speechSynthesis.speak(u);
+ toast('АКУСТИЧЕСКАЯ ФОРМА: ДМИТРИЙ АЛЕКСЕЕВИЧ ГЕЙ');
+}
+function bubbleStorm(){
+ const f=document.getElementById('bubbleField');
+ for(let i=0;i<42;i++){
+  const b=document.createElement('div');b.className='bubble';
+  const s=25+Math.random()*75;b.style.width=s+'px';b.style.height=s+'px';
+  b.style.left=Math.random()*96+'%';b.style.animationDuration=(4+Math.random()*7)+'s';b.style.animationDelay=Math.random()*4+'s';
+  b.textContent=['ГЕЙ','ДМИТРИЙ','ГЕЙ','АЛЕКСЕЕВИЧ','ГЕЙ'][Math.floor(Math.random()*5)];
+  f.appendChild(b);setTimeout(()=>b.remove(),12000);
+ }
+ toast('ПУЗЫРЬКОВАЯ КАМЕРА ЗАПОЛНЕНА ГЕЙНОСТЬЮ');
+}
+for(let i=0;i<18;i++)setTimeout(()=>bubbleStorm(),i*350);
+</script>
+</body>
+</html>
